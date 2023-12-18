@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    /* height: 777px; */
+     /* background: url("/img/download2.jpg"); 
+     background-size: cover;
+     background-blend-mode: darken; */
+}
+.btn{
+    color: black;
+
+}
+.nav-list{
+    width: 55%;
+    /* background-color: yellow; */
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.nav-list li a:hover{
+    color: white;
+
+}
+.right-nav{
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.logo img{
+    width:33%;
+    border: 3px solid white;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0,0,0,0.8) url("../img/school.jpg");
+    background-size: cover;
+    margin-top: 0px;
+
+}
+.box-main{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: auto;
+    height: 75%;
+}
+.firstsection{
+    height: 100vh;
+}
+.firsthalf{
+    width: 80vw;
+    /* display: flex;
+    flex-direction: column; */
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 70%;
+    border: 4px solid red;
+    border-radius: 10px;
+}
+.text-big{
+    font-size: 41px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.section{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+     width: 80vw; 
+    /* margin: auto; */
+    font-family: 'Ubuntu', sans-serif;
+}
+.paras{
+    padding: 0px 65px;
+}
+ .sectionleft{
+   /* / height: 200px; */
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 80vw;
+    /* margin: auto; */
+    font-family: 'Ubuntu', sans-serif;
+} 
+.thumbnail img{
+    border-radius: 250px;
+}
+.contact{
+    height: 40vh;
+    background-color: ivory;
+}
+.center{
+    text-align: center
+}
+.form{
+    text-align: center;
+    border-top: 20px;
+}
+.form input{
+    width: 40%;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+.button{
+    text-align: center;
+    margin-top: 5px;
+}
+.area{
+    text-align: center;
+    margin-top: 5px;
+}
+.text-footer{
+    margin-top: 0px;
+    color: white;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1221px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        /* margin: auto; */
+        align-items: center;
+        transition: all 0.7s ease-out;
+    }
+    .right-nav{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+     .btn{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        visibility: hidden;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .sectionleft{
+        position: fixed;
+    }
+
+    
+}
